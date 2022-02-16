@@ -48,7 +48,18 @@ console.log("Nombre aleatoire entre 0 et 255:", aleatoire3);
 var substr_txt =
   "You cannot end a sentence with because because because is a conjunction";
 
-var position1 = substr_txt.indexOf("because");
-var position3 = substr_text.i;
+var txt2 = "position";
+let taille_txt2 = txt2.length;
+console.log(taille_txt2);
 
-let result = substr_text.substr(1, 4);
+var position1 = substr_txt.indexOf("because");
+var position3 = substr_txt.lastIndexOf("because");
+console.log(position1);
+
+var taille_total = substr_txt.length;
+
+var recup0 = substr_txt.substring(position1, taille_total);
+
+console.log(recup0);
+var recup1 = recup0.substring(0, taille_txt2 * 3);
+console.log(recup1);
