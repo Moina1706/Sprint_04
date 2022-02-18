@@ -24,7 +24,9 @@ console.log(defi.substring(0, 9));
 /*A partir de la chaîne de caractères "10 jours en JavaScript",
  écrire le code qui permet d'obtenir la chaîne de caractères "Jours en JavaScript".*/
 var text = "10 jours en JavaScript";
-console.log(text.substring(3, text.length));
+var text2 = text.substring(3, text.length);
+var toto = text2[0].toUpperCase() + text2.substring(1);
+console.log("Supprimer 10 et mettre J en Majuscule:", toto);
 
 /*8.Vérifiez si la chaîne contient un mot Script en utilisant la méthode includes() */
 console.log(text.includes("Script"));
@@ -57,7 +59,7 @@ console.log("Quinzieme caracteres:", changeText.charAt(15));
 console.log("Code du J", changeText.charCodeAt(3));
 
 //15. Utilisez indexOf pour déterminer la position de la première occurrence de a dans 10 Jours en JavaScript
-console.log(" premiere occurence de a:", changeText.indexOf("a"));
+console.log("Premiere occurence de a:", changeText.indexOf("a"));
 
 // 16.Utilisez lastIndexOf pour déterminer la position de la dernière occurrence de a dans 10 Jours en JavaScript.
 

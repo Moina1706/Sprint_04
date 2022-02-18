@@ -66,5 +66,51 @@ var l_jar = "jargon".length;
 console.log(l_jar);
 console.log(l_py);
 if (l_py != l_jar) {
-  console.log("Ne viendra pas ici");
+  console.log("Ne viendra jamais ici");
 }
+
+/*Déterminez d'abord le résultat des expressions suivantes sans utiliser console.log(). 
+Après avoir décidé le résultat, confirmez-le en utilisant console.log()
+
+    4 > 3 && 10 < 12 True 
+    4 > 3 && 10 > 12 False
+    4 > 3 || 10 < 12 True
+    4 > 3 || 10 > 12 True
+    !(4 > 3) False
+    !(4 < 3) True
+    !(false) True
+    !(4 > 3 && 10 < 12) False
+    !(4 > 3 && 10 > 12) True
+    !(4 === '4') True
+    There is no 'on' in both dragon and python  True */
+
+// Utilisez l'objet Date pour effectuer les activités suivantes
+
+const date = new Date(); //format date parsing
+var date2 = [];
+date2 = date;
+console.log(date);
+var annee = date.getFullYear();
+var mois = date.getMonth() + 1;
+var jour = date.getDay();
+var heure = date.getHours();
+var minutes = date.getMinutes();
+var secondes = date.getSeconds();
+
+//     Quelle est l'année aujourd'hui?
+console.log("Cette année:", date.getFullYear());
+//     Quel est le mois aujourd'hui en nombre?
+console.log("Ce mois-ci:", mois);
+//     Quelle est la date aujourd'hui?
+console.log("La date d'aujourd'hui", jour + "/" + mois + "/" + annee);
+//     Quel est le jour aujourd'hui en nombre?
+console.log("Aujourd'hui:", jour);
+//     Maintenant, quel le nombre d'heure ?
+console.log("L'heure:", heure);
+//     Maintenant, quel le nombre de minutes ?
+console.log("Minutes:", minutes);
+
+//     Découvrez le nombre de secondes écoulées entre le 1er janvier 1970 et aujourd'hui.
+
+let ms = Date.now();
+console.log("Nombre de seconde depuis 1er Janvier 1970", ms / 1000);
