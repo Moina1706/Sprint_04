@@ -6,13 +6,13 @@ et attribuez des types de données chaîne, boolean, undefined et null*/
 var chaine = "toto";
 let x = null;
 let bol = false;
-let j = undefined;
+let u = undefined;
 
 // Declaring variables with number values
 
-var j = 1;
+var y = 1;
 var nbre = 52;
 let nombre = 11;
 
 // Variables can also be declaring in one line separated by comma
-var j, z, u;
+var j, z, w;
