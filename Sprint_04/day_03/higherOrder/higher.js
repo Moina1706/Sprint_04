@@ -164,5 +164,59 @@ console.log(sumWithInitial);
 Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries*/
 
 console.log(
-  countries.reduce((a, b) => a + b + "  ") + " are north European countries "
+  countries.reduce((a, b) => a + b + " ") + " are north European countries "
 ); //Fonctionne aussi
+
+/*17Expliquez la différence entre some et every*/
+// some renvoie true si au moins une des conditions est vrai, il ne modifie pas le tableau
+//every renvoie true si toute les condition sont vrai
+
+//18. Utilisez some pour vérifier si la longueur de certains noms est supérieure à sept dans le tableau des noms.
+
+const long_1 = (element) => element.length >= 7;
+console.log(names.some(long_1));
+
+//19. Utilisez every pour vérifier si tous les pays contiennent le mot land.
+const even = (element1) => element1.match("land");
+console.log(countries.every(even));
+
+//20. Expliquez la différence entre find et findIndex.
+
+/*The find() method returns the value of the first element that passes a test.
+The find() method executes a function for each array element.
+The find() method retuns undefined if no elements are found.
+The find() method does not execute the function for empty elements.
+The find() method does not change the original array.*/
+
+/*The findIndex() method executes a function for each array element.
+The findIndex() method returns the index (position) of the first element that passes a test.
+The findIndex() method returns -1 if no match is found.
+The findIndex() method does not execute the function for empty array elements.
+The findIndex() method does not change the original array.*/
+
+const inventory = [
+  { name: "apples", quantity: 2 },
+  { name: "bananas", quantity: 0 },
+  { name: "cherries", quantity: 5 },
+];
+
+function shopping(inv_3) {
+  return inv_3.name == "cherries";
+}
+console.log(inventory.find(shopping));
+//================================================================
+
+//Utilisez find pour trouver le premier pays contenant seulement six lettres dans le tableau des pays.
+const long_2 = (element3) => element3.length >= 6;
+console.log(countries.find(long_2));
+
+/*Utilisez findIndex pour trouver la position du premier pays contenant seulement six
+ lettres dans le tableau des pays.*/
+const long_3 = (element4) => element4.length >= 6;
+console.log(countries.findIndex(long_3));
+/*(Facultatitf) Utilisez findIndex pour trouver la position
+ de Norway dans le tableau countries; si elle n'existe pas dans le tableau, vous obtiendrez -1.*/
+const long_4 = (element4) => element4 === "NorwayWEWE";
+console.log(countries.findIndex(long_4));
+/*(Facultatitf) Utilisez findIndex pour trouver la position de Russia dans
+ le tableau countries; si elle n'existe pas dans le tableau, vous obtiendrez -1.*/

@@ -71,14 +71,13 @@ const users = {
 //console.log(users)
 //var size = Object.keys(myObj).length;
 
-//console.log(size);
 var big = "";
-var nom = -1;
+var longueurListe = -1;
 for (let i in users) {
-  if (users[i].skills.length > nom) {
+  if (users[i].skills.length > longueurListe) {
     //console.log(users[i].skills.length);
     //console.log(nom);
-    nom = users[i].skills.length;
+    longueurListe = users[i].skills.length;
     big = i;
   }
 }
